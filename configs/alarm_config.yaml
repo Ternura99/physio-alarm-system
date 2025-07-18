@@ -1,0 +1,15 @@
+common:
+  variables: ["systolic_blood_pressure", "diastolic_blood_pressure", "pulse_rate"]  # 监测指标
+  window_size: 100  # 滑动窗口大小
+  forecast_horizon: 60  # 预测步长
+  results_dir: "results/alarm_results"  # 报警结果保存路径
+  model_path: "results/model_selection/best_model.pth"  # 最优模型路径（衔接模型选择模块）
+
+fixed_baseline:
+  baseline_ratio: 0.5  # 基线计算比例（前N%数据）
+  normal_range: [0.85, 1.15]  # 正常范围（基线的±15%）
+  false_alert_analysis_interval: 200  # 定时误报分析间隔（时间步）
+
+dynamic_baseline:
+  segment_length: 60  # 动态分段长度（每段重新计算基线）
+  normal_range: [0.85, 1.15]  # 每段正常范围（当前段基线的±15%）

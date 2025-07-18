@@ -1,0 +1,15 @@
+ocr_config:
+  weights_path: "C:/Users/kkk/Desktop/v11new/trained_models/model_run_1/weights/best.pt"
+  img_dir: "C:/Users/kkk/Desktop/v11new/1k"
+  output_dir: "data/annotated_images"
+  distance_threshold: 80
+  group_threshold: 1000
+  y_threshold: 20
+
+db_config:
+  host: "localhost"
+  user: "root"
+  password: "123456"
+  database: "ocr_results"
+  charset: "utf8mb4"
+  cursorclass: "pymysql.cursors.DictCursor"
