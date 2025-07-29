@@ -12,7 +12,7 @@ The system consists of four core modules:
 4. **Self-optimization module**: Analyzes false alarm characteristics and recommends optimization strategies.
 
 ## Real-time prediction illustration
-![Real-time prediction illustration](paper_supplements/real-time.gif)
+![Real-time prediction illustration](real-time.gif)
 
 ## Quick start
 
