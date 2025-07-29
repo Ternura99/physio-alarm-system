@@ -3,7 +3,7 @@
 A deep learning-based system for real-time prediction and intelligent alarming of vital signs during anesthesia. Supports automatic model selection, multi-mode alarms, and false alarm self-optimization, providing intelligent solutions for laboratory animal monitoring.
 
 ## System Architecture
-![系统架构图](paper_supplements/architecture_diagram.png)
+![系统架构图](architecture_diagram.png)
 
 The system consists of four core modules:
 1. **Data processing module**: OCR extracts physiological data and standardizes it.
